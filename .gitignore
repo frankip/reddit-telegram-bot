@@ -1,0 +1,4 @@
+*.lock
+*.ini
+storit.py
+tgbot.py
