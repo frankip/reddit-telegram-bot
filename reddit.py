@@ -21,7 +21,7 @@ def get_posts(reddit):
 # app = Flask(__name__)
 # @app.route('/')
 # def reddit_request():
-def main():
+def get_reddit():
     reddit = authenticate()
     subreddit = get_posts(reddit)
     for submission in subreddit.stream.submissions():
@@ -40,4 +40,4 @@ def main():
 
 if __name__ == '__main__':
     # app.run()
-    main()
+    get_reddit()
